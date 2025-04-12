@@ -1,21 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { ILogin } from './LoginInteface';
 
 interface LoginPayload {
   username: string;
   password: string;
-}
-
-export interface ILogin {
-  id: number;
-  username: string;
-  email: string;
-  firstName: string;
-  lastName: string;
-  gender: string;
-  image: string;
-  accessToken: string;
-  refreshToken: string;
 }
 
 @Injectable({

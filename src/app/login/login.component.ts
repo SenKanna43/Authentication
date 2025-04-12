@@ -2,18 +2,7 @@ import { Component } from '@angular/core';
 import { AuthService } from '../auth.service';
 import { FormsModule } from '@angular/forms'
 import { Router } from '@angular/router';
-
-export interface ILogin {
-  id: number;
-  username: string;
-  email: string;
-  firstName: string;
-  lastName: string;
-  gender: string;
-  image: string;
-  accessToken: string;
-  refreshToken: string;
-}
+import { ILogin } from '../LoginInteface';
 
 @Component({
   selector: 'app-login',
@@ -46,6 +35,6 @@ export class LoginComponent {
         console.error('Login failed:', err);
       }
     });
-    
+
   }
 }
